@@ -1,0 +1,242 @@
+/* Hero */
+.hero-section {
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 770px;
+    height: 800px;
+    position: relative;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.hero-link {
+    display: block;
+    width: 243px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 330px;
+}
+.hero-one{
+    position: absolute;
+    width: 100px;
+        height: 86px;
+        left: 70px;
+        bottom: -20px;
+}
+.hero-two{
+    position: absolute;
+    width: 61px;
+        height: 64px;
+        left: 140px;
+            bottom: 0;
+}
+.hero-three{
+    position: absolute;
+    width: 62px;
+        height: 54px;
+        right: 60px;
+            bottom: -4px;
+}
+@media only screen and (min-width: 1439px) {
+    .hero-section {
+        background-image: url("/img/hero/desk.png");
+        background-size: cover;
+        height: 975px;
+    }
+
+    .hero-link {
+        margin-top: 494px;
+    }
+    .hero-img-wrapper{
+        display: none;
+    }
+}
+/* Spud Shots */
+.spud-title{
+    margin-bottom: 36px;
+}
+.spud-swiper-slide{
+    cursor: pointer;
+}
+.custom-navigation{
+    display: none;
+}
+@media only screen and (min-width: 1439px) {
+    .custom-navigation{
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+    }
+    .custom-arrow{
+background-color: inherit;
+border: none;
+width: 48px;
+height: 48px;
+    }
+.custom-next{
+    transform: rotate(180deg);
+}
+}
+/* About The Game */
+.about-img-wrapper{
+    display: none;
+}
+.about-section{
+    background-image: url("/img/about/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: 100% 213px;
+}
+.about-text{
+    margin-top: 250px;
+}
+@media only screen and (min-width: 1439px) {
+.about-section{
+    background-image: url("/img/about/desk.png");
+    background-size: 630px 358px;
+    background-position: top 150px left 80px;
+    height: 540px;
+}
+.about-text{
+    margin-top: 36px;
+    width: 522px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.about-img-wrapper{
+    display: block;
+}
+.about-one{
+    width: 128px;
+        height: 135px;
+        margin-right: 21px;
+        margin-left: auto;
+        margin-top: 60px;
+}
+.about-two{
+    width: 88px;
+        height: 92px;
+        margin-right: 150px;
+            margin-left: auto;
+            margin-top: -120px;
+}
+.about-three{
+    width: 56px;
+        height: 59px;
+        margin-right: 200px;
+            margin-left: auto;
+            margin-top: -40px;
+}
+}
+/* Feature */
+.features-title{
+    margin-bottom: 28px;
+}
+.features-swiper-slide{
+    cursor: pointer;
+}
+@media only screen and (min-width: 1439px) {
+ .features-title{
+    margin-bottom: 36px;
+ }
+ .features-swiper-wrapper{
+    display: flex;
+    gap: 20px;
+ }
+ .features-swiper-slide{
+    max-width: 197px;
+        height: 184px;
+ }
+}
+/* Reviews */
+.reviews-section{
+    height: 460px;
+}
+.reviews-title{
+    margin-bottom: 28px;
+}
+.reviews-container{
+    position: relative;
+}
+.reviews-swiper-slide{
+    cursor: pointer;
+    background: #06c8fa;
+    border-radius: 20px;
+        padding: 28px 22px;
+        min-height: 220px;
+}
+.reviews-wrapper{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.reviews-author{
+    font-family: "Chewy", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #b14c00;
+}
+.hand-desk,
+.hand-desk-two{
+    display: none;
+}
+.hand-mob{
+    position: absolute;
+    width: 89px;
+        height: 148px;
+        z-index: 100000;
+        bottom: -44px;
+        right: 20px;
+}
+@media only screen and (min-width: 1439px) {
+  .reviews-title{
+    margin-bottom: 36px;
+  }
+  .hand-mob{
+    display: none;
+  }
+  .reviews-swiper-wrapper{
+    max-width: 630px;
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  .reviews-swiper-slide{
+    max-width: 305px;
+        height: 220px;
+  }
+  .hand-desk{
+  position: absolute;
+  display: block;
+width: 327px;
+    height: 539px;
+  right: 80px;
+  bottom: 75px;
+  }
+  .hand-desk-two{
+    position: absolute;
+        display: block;
+        width: 307px;
+            height: 360px;
+        left: 80px;
+        bottom: 75px; 
+  }
+}
