@@ -18,15 +18,55 @@
     <script type="module" crossorigin src="/potato-clicker/index.js"></script>
     <link rel="modulepreload" crossorigin href="/potato-clicker/assets/vendor-wKantkHV.js">
     <link rel="stylesheet" crossorigin href="/potato-clicker/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/potato-clicker/assets/styles-COc_lfLd.css">
+    <link rel="stylesheet" crossorigin href="/potato-clicker/assets/styles-CO_-jO6C.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 36V33H42V36H6ZM6 25.5V22.5H42V25.5H6ZM6 15V12H42V15H6Z" fill="#161616" /> 
+       </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Spud">Spud Shots</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#About">About The Game</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Characters">Characters</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Spud">Spud Shots</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#About">About The Game</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Features">Features</a></li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#Characters">Characters</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -45,7 +85,7 @@
     </div>
 </section>
 <!-- Spud Shots -->
-<section class="spud-section">
+<section class="spud-section" id="Spud">
     <div class="container">
         <h2 class="spud-title">Spud Shots</h2>
         <div class="swiper spud-swiper">
@@ -78,7 +118,7 @@
     </div>
 </section>
 <!--About The Game  -->
-<article class="about-section">
+<article class="about-section" id="About">
     <div class="container about-container">
         <h2 class="about-title">About The Game</h2>
         <p class="about-text"><span class="span">Potato Clicker </span>is not just another idle game — it’s a glorious, starchy journey of growth, greed, and giggles. From
@@ -92,7 +132,7 @@
     </div>
 </article>
 <!-- Features -->
-<section class="features-section">
+<section class="features-section" id="Features">
     <div class="container">
         <h2 class="features-title">Features</h2>
         <div class="swiper features-swiper">
@@ -120,7 +160,7 @@
     </div>
 </section>
 <!-- Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container reviews-container">
         <h2 class="reviews-title">Reviews</h2>
         <div class="swiper reviews-swiper">
@@ -175,7 +215,7 @@
     </div>
 </section>
 <!-- Characters -->
-<section class="characters-section">
+<section class="characters-section" id="Characters">
     <div class="container characters-container">
         <h2 class="characters-title">Characters</h2>
         <div class="swiper characters-swiper">
@@ -209,11 +249,31 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-  
+  <div class="container footer-container">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="./privacy.html">Privacy policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="./terms.html">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" href="./cookies.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-text">© 2025 clickerti.site. All rights reserved</p>
   </div>
 </footer>
-
+    <div id="cookie-popup" class="cookie-popup">
+    <div class="popup-wrapper">
+        <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept">Accept Cookies</button>
+            <button id="decline-cookies" class="btn-decline">Decline Cookies</button>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>
