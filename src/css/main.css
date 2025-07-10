@@ -270,6 +270,9 @@ width: 327px;
     bottom: -56px;
     right: 20px;
 }
+.characters-section{
+height: 760px;
+}
 @media only screen and (min-width: 1439px) {
   .characters-title{
     margin-bottom: 36px;
@@ -302,4 +305,7 @@ padding-top: 101px;
         right: 500px;
         bottom: -80px;
   }
+.characters-section{
+    height: 1100px;
+}
 }
