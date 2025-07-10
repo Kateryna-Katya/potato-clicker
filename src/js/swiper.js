@@ -15,6 +15,11 @@ const swiperConfigs = [
     wrapperClass: 'reviews-swiper-wrapper',
   },
   {
+    selector: '.characters-swiper',
+    slideClass: 'characters-swiper-slide',
+    wrapperClass: 'characters-swiper-wrapper',
+  },
+  {
     selector: '.spud-swiper',
     slideClass: 'spud-swiper-slide',
     wrapperClass: 'spud-swiper-wrapper',
@@ -62,6 +67,21 @@ function initSwipers() {
       if (screenWidth < 1439) {
         const swiper = new Swiper(container, {
           slidesPerView: 1.1,
+          spaceBetween: 20,
+          loop: true,
+          slideClass: config.slideClass,
+          wrapperClass: config.wrapperClass,
+          direction: 'horizontal',
+        });
+        swiperInstances[id] = swiper;
+      }
+    }
+      
+          // === characters SWIPER ===
+    else if (config.selector === '.characters-swiper') {
+      if (screenWidth < 1439) {
+        const swiper = new Swiper(container, {
+          slidesPerView: 1,
           spaceBetween: 20,
           loop: true,
           slideClass: config.slideClass,

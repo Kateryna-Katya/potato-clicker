@@ -104,10 +104,14 @@ height: 48px;
 }
 @media only screen and (min-width: 1439px) {
 .about-section{
-    background-image: url("/img/about/desk.png");
-    background-size: 630px 358px;
-    background-position: top 150px left 80px;
+    background-image: none;
     height: 540px;
+}
+.about-container{
+    background-image: url("/img/about/desk.png");
+        background-size: 630px 358px;
+        background-position: top 150px left 80px;
+        background-repeat: no-repeat;
 }
 .about-text{
     margin-top: 36px;
@@ -203,6 +207,9 @@ height: 48px;
         right: 20px;
 }
 @media only screen and (min-width: 1439px) {
+    .reviews-section {
+            height: 900px;   
+        }
   .reviews-title{
     margin-bottom: 36px;
   }
@@ -238,5 +245,61 @@ width: 327px;
             height: 360px;
         left: 80px;
         bottom: 75px; 
+  }
+}
+/* Character */
+.characters-container{
+    position: relative;
+}
+.characters-title{
+    margin-bottom: 28px;
+}
+.characters-swiper-slide{
+    cursor: pointer;
+    max-height: 500px;
+}
+.characters-img{
+    width: 335px;
+        height: 468px;
+}
+.characters-hand-img{
+    position: absolute;
+    width: 89px;
+        height: 129px;
+    z-index: 100000;
+    bottom: -56px;
+    right: 20px;
+}
+@media only screen and (min-width: 1439px) {
+  .characters-title{
+    margin-bottom: 36px;
+  }
+  .characters-swiper-wrapper{
+    display: flex;
+    gap: 20px;
+  }
+  .characters-swiper-slide{
+    max-width: 413px;
+        min-height: 555px;
+padding-top: 101px;
+  }
+  .characters-swiper-slide-two{
+    max-width: 414px;
+        min-height: 656px;
+        padding-top: 0;
+  }
+  .characters-img{
+    width: 413px;
+        height: 555px;
+  }
+  .characters-img-two{
+    width: 414px;
+        height: 656px;
+  }
+  .characters-hand-img{
+    width: 126px;
+        height: 183px;
+        right: 500px;
+        bottom: -80px;
   }
 }
